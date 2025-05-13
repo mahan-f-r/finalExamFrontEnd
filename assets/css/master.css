@@ -68,7 +68,7 @@ body {
 .user-card {
     display: flex;
     flex-direction: row-reverse;
-    background-image: url("../../public/images/image.png"); /* update path as needed */
+    background-image: url("../../public/images/Pattern.png"); /* update path as needed */
     background-size: cover;
     background-position: right;
     border-radius: var(--radius-sm);
@@ -314,9 +314,10 @@ body {
 }
 
 .form-container {
-    max-height: calc(100vh - 150px);
+    max-height: calc(100vh - 50px);
     /* overflow-y: auto; */
     overflow-x: hidden;
+    margin-bottom: 16px;
 }
 
 .nav-box .title {
@@ -384,7 +385,7 @@ body {
 
 .content {
     max-height: calc(-150px + 100vh);
-    overflow: hidden auto;
+    /* overflow: hidden auto; */
 }
 
 
