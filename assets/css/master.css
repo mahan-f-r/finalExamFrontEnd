@@ -503,13 +503,45 @@ textarea {
         width: 100%;
     }
 }
+@media (max-width:992px){
+    .side-bar,
+    .nav-box{
+      display: none;
+    }
 
-/* body {
-  font-family: Tahoma, sans-serif;
-  background-color: #f9f9f9;
-  padding: 20px;
-  direction: rtl;
-} */
+  }
+
+  @media (max-width: 993px) {
+    /******** image-header ******/
+    .image-header {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .card-icon {
+        gap: 1rem;
+        margin-bottom: 0.5rem;
+    }
+  
+    .header-nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 0.85rem;
+    }
+  
+    .header-nav a {
+        white-space: nowrap;
+    }
+  
+    /***** filter-box *******/
+    .filter-container .dropdown.mb-2.mb-md-0 {
+        width: 100%;
+    }
+  
+    .side-bar {
+        display: none;
+    }
+}
 
 .table-responsive {
     overflow-x: auto;
