@@ -68,7 +68,6 @@ body {
 .user-card {
     display: flex;
     flex-direction: row-reverse;
-    background-image: url("../../public/images/Pattern.png"); /* update path as needed */
     background-size: cover;
     background-position: right;
     border-radius: var(--radius-sm);
@@ -77,6 +76,11 @@ body {
     position: relative;
     align-items: center;
     justify-content: space-between;
+    background-image: url("../../public/images/Pattern.png"); /* update path as needed */
+    background-position: right;
+    background-size: 75%;
+    background-color: rgb(244, 245, 247);
+    background-repeat: no-repeat;
 }
 
 /* User info section (left side) */
