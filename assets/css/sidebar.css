@@ -1,0 +1,313 @@
+a {
+    text-decoration: none;
+    color: var(--clr-icon-header);
+    font-family: "IRANYekanFN";
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+body >.container-fluid > .row {
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: row-reverse;
+}
+@font-face {
+    font-family: "IRANYekanFN";
+    src: url(../../public/fonts/Qs_Iranyekan\ light.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "IRANYekanFN";
+    src: url(../../public/fonts/Qs_Iranyekan\ black.ttf);
+    font-weight: 800;
+}
+:root {
+    --clr-bg: hsla(160, 84%, 39%, 0.2);
+    --clr-bg-card: hsla(156, 98%, 19%, 1);
+    --clr-icon-header: hsla(0, 0%, 98%, 1);
+    --clr-bg-icon: hsla(214, 100%, 97%, 1);
+    --clr-color: rgb(133, 133, 133);
+    --clr-border-profile: rgb(149, 216, 190);
+    --clr-background-color-profile: rgb(232, 239, 251);
+    --clr-border-icon: rgb(211, 225, 251);
+    --clr-color-button-hover: rgb(60, 151, 116);
+    --clr-background-hover: rgb(191, 232, 216);
+}
+.container-fluid .header-navbar {
+    height: 62px;
+    padding: 20px 40px 4px 40px;
+}
+.header-nav a {
+    font-family: "IRANYekanFN";
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--clr-color);
+}
+.image-header {
+    gap: 12px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.header-img img {
+    width: 100%;
+    max-width: 32px;
+    height: 32px;
+    border-radius: 60px;
+    border: 2px solid var(--clr-border-profile);
+}
+.header-icon {
+    width: 32px;
+    aspect-ratio: 1;
+    border-radius: 60px;
+    background-color: var(--clr-background-color-profile);
+    text-align: center;
+    border: 2px solid var(--clr-border-icon);
+}
+.header-icon img {
+    width: 100%;
+    max-width: 16px;
+    aspect-ratio: 1;
+}
+.side-bar {
+    background-color: var(--clr-bg-card);
+}
+.container-sidebar {
+    width: 100%;
+    /* max-width: 265px; */
+    height: calc(100vh - 35px);
+    overflow-y: auto;
+}
+.title-sidebar {
+    font-family: "IRANYekanFN";
+    color: var(--clr-icon-header);
+    font-weight: 800;
+    font-size: 14px;
+    padding: 20px 20px 16px 8px;
+    display: flex;
+}
+.title-sitebar span {
+    color: var(--clr-icon-header);
+}
+.line {
+    color: var(--clr-icon-header);
+    /* max-width: 215px; */
+    margin: auto;
+    margin: 8px 0;
+}
+.img-arrow {
+    width: 100%;
+    max-width: 12px;
+    aspect-ratio: 1;
+}
+.dropdown-center-first span {
+    color: var(--clr-icon-header);
+}
+.dropdown-menu-first {
+    width: 100%;
+    max-width: 225px;
+    background-color: var(--clr-icon-header);
+}
+.dropdown-item-first {
+    color: var(--clr-color);
+    width: 100%;
+    max-width: 225px;
+    height: 40px;
+}
+.dropdown-item:hover {
+    background-color: var(--clr-background-hover);
+    color: var(--clr-color-button-hover);
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.card,
+.card-one,
+.card-two,
+.card-three,
+.card-four,
+.card-five,
+.card-six,
+.card-seven,
+.card-eghit,
+.card-nine,
+.card-ten,
+.card-eleven {
+    background: none;
+    border: none;
+    width: 100%;
+    /* max-width: 225px; */
+    padding: 10px 9px;
+    gap: 15px;
+    flex-direction: row;
+    direction: rtl;
+}
+.card .icon-card {
+    width: 100%;
+    max-width: 21.5px;
+    height: 21.56px;
+}
+
+.side-bar div{
+    font-family: "IRANYekanFN";
+    font-weight: 800;
+}
+.card .title-card {
+    color: hsla(0, 0%, 98%, 1);
+    font-family: "IRANYekanFN";
+    font-weight: 800;
+}
+.card-two .icon-card {
+    width: 100%;
+    max-width: 21.5px;
+    height: 21.56px;
+}
+.card-two .img-arrow img {
+    width: 10px;
+    margin-left: 10px;
+}
+.card-two .title-card {
+    color: hsla(0, 0%, 98%, 1);
+    font-family: "IRANYekanFN";
+    font-weight: 800;
+}
+.card-three .style-link {
+    display: flex;
+    justify-content: space-between;
+    color: var(--clr-icon-header);
+    font-family: "IRANYekanFN";
+    font-weight: 400;
+    text-decoration: none;
+}
+.dropdown-menu {
+    background-color: hsl(160, 90%, 23%);
+    border: none;
+    /* width: 100%; */
+    font-family: "IRANYekanFN";
+    font-weight: 400;
+    font-size: 11px;
+}
+.dropdown-item {
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    width: 100%;
+    /* max-width: 225px; */
+}
+.dropdown-item:hover {
+    font-size: 12px;
+}
+.img-arrow img {
+    width: 10px;
+    height: 6px;
+    margin-left: 10px;
+}
+.card-four .style-link {
+    background: none;
+    color: hsla(0, 0%, 98%, 1);
+    font-family: "IRANYekanFN";
+    font-weight: 800;
+    text-decoration: none;
+    justify-content: space-between;
+}
+img {
+    width: 100%;
+    max-width: 21.5px;
+    height: 21.56px;
+}
+.card-five .style-link {
+    justify-content: space-between;
+}
+.card-six .dropdown .style-link div span {
+    width: 100%;
+    max-width: 225px;
+}
+.card-six .style-link {
+    color: var(--clr-icon-header);
+}
+.card-seven .style-link {
+    color: var(--clr-icon-header);
+    justify-content: space-between;
+}
+.card-eghit .style-link {
+    justify-content: space-between;
+    display: flex;
+    color: var(--clr-icon-header);
+}
+.card-list {
+    list-style: none;
+    margin-top: 10px;
+    border: none;
+    border-radius: 14px;
+    font-family: "IRANYekanFN";
+    font-weight: 400;
+    font-size: 12px;
+    background-color: var(--clr-bg);
+}
+.card-list:first-child {
+    background-color: white;
+}
+.list-style {
+    text-decoration: none;
+    color: var(--clr-icon-header);
+    gap: 15px;
+    width: 100%;
+    max-width: 193px;
+    height: 39px;
+}
+.card-nine .style-link {
+    justify-content: space-between;
+    display: flex;
+    color: var(--clr-icon-header);
+}
+.card-ten .style-link {
+    justify-content: space-between;
+    display: flex;
+    color: var(--clr-icon-header);
+}
+.card-eleven .style-link {
+    justify-content: space-between;
+    display: flex;
+    color: var(--clr-icon-header);
+}
+
+.header-img:hover {
+    border: 2px solid var(--clr-color-button-hover);
+    border-radius: 50%;
+}
+.date-card {
+    font-size: 8.5px;
+    padding: 5px 8.5px;
+    color: var(--clr-color);
+}
+.line-profile {
+    color: var(--clr-color);
+    width: 100%;
+    max-width: 160px;
+    margin: auto;
+    margin: 8px 0;
+}
+.dropdown-profile {
+    background-color: var(--clr-icon-header);
+    box-shadow: 0 0 1px 1px rgb(230, 230, 230);
+}
+.item-profile {
+    color: var(--clr-color);
+    direction: rtl;
+}
+.exit-profile {
+    color: red;
+}
+.dropdown-icon {
+    background-color: var(--clr-icon-header);
+    box-shadow: 0 0 1px 1px rgb(230, 230, 230);
+}
+.item-icon {
+    color: var(--clr-color);
+    direction: rtl;
+}
+
+.show{
+    width: 100%;
+}

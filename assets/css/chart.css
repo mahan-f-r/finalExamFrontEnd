@@ -1,0 +1,377 @@
+@font-face {
+    font-family: "IRANYekanFN"; /* Name your font family */
+    src: url("../../public/fonts/IRANYekanFN.ttf"); /* Locate the .ttf file within your directory*/
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "IRANYekanFN"; /* Name your font family */
+    src: url("../../public/fonts/IRANYekanFN.ttf"); /* Locate the .ttf file within your directory*/
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "IRANYekanFN"; /* Name your font family */
+    src: url("../../public/fonts/IRANYekanFN.ttf"); /* Locate the .ttf file within your directory*/
+    font-weight: 700;
+}
+
+body {
+    font-family: "IRANYekanFN";
+    font-weight: 500;
+}
+
+.chart-container {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+
+/* Custom styling for chart legend */
+.chart-container .chartjs-legend {
+    padding-right: 15px !important;
+    text-align: right !important;
+}
+
+.chart-container .chartjs-legend li {
+    margin-bottom: 10px !important;
+}
+
+.chart-container canvas {
+    margin-left: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Fix for RTL canvases */
+canvas#projectChart {
+    direction: ltr; /* Ensure internal chart rendering is correct */
+}
+
+.accordion-item {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Custom RTL accordion button styling */
+.rtl-accordion-button {
+    position: relative;
+    padding-left: 2.5rem !important;
+    padding-right: 1.25rem !important;
+    background-color: white !important;
+}
+
+/* Remove default Bootstrap arrow */
+.rtl-accordion-button::after {
+    display: none !important;
+}
+
+/* Add custom arrow on the left side - always green */
+.rtl-accordion-button::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #10b981;
+    border-bottom: 2px solid #10b981;
+    position: absolute;
+    left: 1.25rem;
+    transform: rotate(-45deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Style for the active state - keep green, just rotate */
+.rtl-accordion-button:not(.collapsed)::before {
+    transform: rotate(45deg);
+}
+
+.accordion-button {
+    background-color: white;
+    color: #333;
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    box-shadow: none;
+}
+
+.form-select {
+    border-radius: 8px;
+    font-size: 13px;
+    padding: 5px 10px;
+    border-color: #e9ecef;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    min-width: 120px;
+    background-position: left 0.75rem center !important;
+    padding-left: 2.25rem !important;
+    padding-right: 0.75rem !important;
+}
+
+.form-select:focus {
+    border-color: #dee2e6;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-title img {
+    width: 18px;
+    height: 18px;
+}
+
+.content {
+    max-height: calc(-150px + 100vh);
+    overflow: hidden auto;
+}
+
+/* Specific styling for the chart with legend */
+.chart-with-legend {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.chart-with-legend canvas {
+    max-width: 55% !important;
+}
+
+.form-select-rtl {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
+    background-repeat: no-repeat !important;
+    background-position: left 0.75rem center !important;
+    background-size: 16px 12px !important;
+}
+
+/* RTL Legend Styling */
+.chartjs-legend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+.chartjs-legend-item {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    margin-bottom: 10px !important;
+    gap: 8px !important;
+}
+
+.chartjs-legend-item-color {
+    margin-left: 8px !important;
+    margin-right: 0 !important;
+}
+
+/* Fix for Chart.js legend in RTL mode */
+canvas + ul {
+    direction: rtl !important;
+    text-align: right !important;
+    list-style: none;
+    padding-right: 0 !important;
+}
+
+canvas + ul li {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    margin-bottom: 10px !important;
+    gap: 8px !important;
+}
+
+/* Table styling to match the reference image exactly */
+
+.border-box {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eaedf1;
+}
+
+.table {
+    /* margin-bottom: 0 !important; */
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    overflow-x: auto;
+}
+
+/* Consistently style all cells with much lighter borders */
+.table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(234, 237, 241, 0.5);
+    vertical-align: middle;
+    background-color: white;
+    font-size: 14px;
+}
+
+/* Cell coloring for odd/even */
+.table td:nth-child(odd) {
+    color: #6c757d;
+    font-weight: 500;
+    text-align: left;
+    width: 20%;
+}
+
+.table td:nth-child(even) {
+    color: #333;
+    font-weight: 400;
+    text-align: right;
+    width: 30%;
+}
+
+/* Section header styling with lighter border */
+.section-header {
+    color: #333 !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    padding: 20px !important;
+    border-bottom: 1px solid rgba(234, 237, 241, 0.5) !important;
+    background-color: white !important;
+    text-align: right !important;
+}
+
+/* Remove all borders from table */
+
+/* Better border handling for collapsed table - much lighter borders */
+.table-bordered > tr > td {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid rgba(234, 237, 241, 0.5);
+}
+
+/* Border spacing on empty cells - much lighter borders */
+.table td[colspan="2"]:empty {
+    border-bottom: 1px solid rgba(234, 237, 241, 0.5);
+}
+
+/* Last row in each table should not have a bottom border */
+
+/* Remove any default bootstrap padding and use much lighter borders */
+.table-bordered th,
+.table-bordered td {
+    border: none;
+    border-bottom: 1px solid rgba(234, 237, 241, 0.5);
+}
+
+/* Header in the details section with lighter border */
+.border-box > .d-flex {
+    border-bottom: 1px solid rgba(234, 237, 241, 0.5);
+    padding: 15px 20px;
+}
+
+.border-box > .d-flex .fw-bold {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Style for the green icon next to "Details" */
+.border-box img {
+    color: #10b981;
+}
+
+/* Remove any extra buttons or styles from bootstrap tables */
+.table-bordered > :not(caption) > * > * {
+    border-width: 0 0 1px 0;
+    border-color: #eaedf1;
+}
+.table-head {
+    margin-bottom: 20px;
+}
+.table-bordered {
+    margin: 10px;
+    border: 1px solid #eaedf1;
+}
+
+
+body,
+.container-fluid,
+.accordion,
+.border-box {
+    overflow-x: hidden;
+}
+
+canvas#projectChart {
+    width: 100%;
+    height: 250px !important;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#projectChart + ul.chartjs-legend {
+    font-size: 14px !important;
+}
+
+.chart-js-datalabels {
+    font-family: "Qs_Iranyekan" !important;
+    text-align: center !important;
+}
+
+.card-number {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    color: #047857;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+@media (max-width: 767.98px) {
+    canvas#projectChart {
+        max-height: 200px;
+    }
+}
+
+
+@media (max-width:992px){
+    .side-bar,
+    .nav-box{
+      display: none;
+    }
+
+  }
+  
+@media (min-width: 768px) {}
+.col-md-6 {
+flex-wrap: nowrap;
+width: 100%;
+
+
+}
+
+
+@media (min-width: 992px) {
+.col-lg-9 {
+    flex: 0 0 auto;
+    width: 75%;
+}
+}
+/* ****************************************** */
+

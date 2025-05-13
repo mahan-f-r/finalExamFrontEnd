@@ -1,0 +1,2363 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="./assets/plugin/bootstrap-v-5.3/css/bootstrap.rtl.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/sidebar.css" />
+        <link rel="stylesheet" href="./assets/css/list.css" />
+
+        <title>list ppage</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 header-navbar">
+                    <div class="image-header d-flex">
+                        <div class="card-icon d-flex gap-3">
+                            <div class="header-img">
+                                <img
+                                    src="./public/images/97b1dc8ba4578b8c995293522fc52cd74a999f74.jpg"
+                                    alt="profile"
+                                />
+                            </div>
+                            <div class="header-icon">
+                                <img
+                                    src="./public/images/message-notif.png"
+                                    alt="message-notif"
+                                />
+                            </div>
+                        </div>
+                        <div class="header-nav">
+                            <a href="#">مدیریت مشاورین</a>
+                            <img src="./public/images/left.png" alt="left" />
+                            <a href="#">لیست همه مشاورین</a>
+                            <img src="./public/images/left.png" alt="left" />
+                            <a href="#">جزئیات مشاور</a>
+                        </div>
+                    </div>
+
+                    <div class="overflow-y-hidden my-4">
+                        <div
+                            class="title-box d-flex justify-content-between align-items-center flex-column flex-md-row mb-3"
+                        >
+                            <div
+                                class="d-flex align-items-center flex-wrap mb-2 mb-md-0"
+                            >
+                                <h3 class="mb-0 ms-3 title">لیست مشاورین</h3>
+                                <span class="badge rounded-1 badge-title ms-2"
+                                    >تعداد رکورد: 584,610</span
+                                >
+                            </div>
+
+                            <div class="d-flex align-items-center">
+                                <img
+                                    src="./public/images/list-images/info-circle.svg"
+                                    alt="info"
+                                />
+                                <span class="ms-1 info">راهنما</span>
+                            </div>
+                        </div>
+                        <div class="container filter-container">
+                            <div class="mb-4 mt-4">
+                                <div
+                                    class="d-flex justify-content-between flex-wrap align-items-center mb-4"
+                                >
+                                    <div class="dropdown mb-2 mb-md-0">
+                                        <button
+                                            class="btn btn-dark dropdown-toggle"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                        >
+                                            عملیات گروهی
+                                            <img
+                                                src="./public/images/list-images/chevron-down.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item text-danger"
+                                                    href="#"
+                                                    >حذف موارد انتخاب شده</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-outline-secondary dropdown-toggle"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                            >
+                                                نمایش در صفحه : ۱۰
+                                                <img
+                                                    src="./public/images/list-images/chevron-down.svg"
+                                                    alt=""
+                                                />
+                                            </button>
+                                        </div>
+
+                                        <button
+                                            class="btn filter-btn"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#filterForm"
+                                        >
+                                            فیلتر
+                                            <img
+                                                src="./public/images/list-images/chevron-down.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="collapse" id="filterForm">
+                                    <form class="row g-3">
+                                        <div class="col-md-6 col-lg-6">
+                                            <label class="form-label"
+                                                >نوع مشاور</label
+                                            >
+                                            <select class="form-select">
+                                                <option selected>
+                                                    شخص حقوقی
+                                                </option>
+                                                <option selected>
+                                                    شخص حفیفی
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <label class="form-label"
+                                                >ماهیت مشاور</label
+                                            >
+                                            <select class="form-select">
+                                                <option selected>
+                                                    اشخص حقیقی
+                                                </option>
+                                                <option selected>
+                                                    عضو هیئت علمی دانشگاه
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <label class="form-label"
+                                                >عنوان مشاور</label
+                                            >
+                                            <select class="form-select">
+                                                <option selected>
+                                                    محمد دارابی
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <label class="form-label">
+                                                کدملی / شناسه ملی</label
+                                            >
+                                            <select class="form-select">
+                                                <option selected>
+                                                    20510997740
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-md-6 col-lg-6">
+                                            <label class="form-label">
+                                                استان</label
+                                            >
+                                            <select class="form-select">
+                                                <option selected>
+                                                    مازندران
+                                                </option>
+                                                <option selected>تهران</option>
+                                                <option selected>البرز</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <label class="form-label">
+                                                شهرستان</label
+                                            >
+                                            <select class="form-select">
+                                                <option selected>ساری</option>
+                                                <option selected>بابل</option>
+                                                <option selected>آمل</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <label class="form-label"
+                                                >کد رهگیری</label
+                                            >
+                                            <div class="input-group">
+                                                <select class="form-select">
+                                                    <option selected>
+                                                        12540000001245
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <label class="form-label"
+                                                >تاریخ اخذ کد رهگیری</label
+                                            >
+                                            <div class="input-group">
+                                                <i class="bi bi-calendar"></i>
+
+                                                <input
+                                                    type="date"
+                                                    class="form-control"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6">
+                                            <label class="form-label"
+                                                >وضعیت</label
+                                            >
+                                            <select class="form-select">
+                                                <option selected>
+                                                    انتخاب کنید
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <div
+                                            class="col-12 d-flex justify-content-end gap-2 mt-3"
+                                        >
+                                            <button
+                                                type="reset"
+                                                class="btn filter-edit"
+                                            >
+                                                بازنویسی
+                                            </button>
+                                            <button
+                                                type="submit"
+                                                class="btn filter-submit"
+                                            >
+                                                فیلتر اطلاعات
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="table-responsive mt-3">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" /></th>
+                                    <div>
+                                        <th>
+                                            ماهیت مشاور
+                                            <img
+                                                src="./public/images/list-images/chevron-expand.svg"
+                                                alt=""
+                                            />
+                                        </th>
+                                    </div>
+                                    <th>
+                                        عنوان مشاور
+                                        <img
+                                            src="./public/images/list-images/chevron-expand.svg"
+                                            alt=""
+                                        />
+                                    </th>
+                                    <th>
+                                        کد ملی / شناسه ملی
+                                        <img
+                                            src="./public/images/list-images/chevron-expand.svg"
+                                            alt=""
+                                        />
+                                    </th>
+                                    <th>
+                                        استان
+                                        <img
+                                            src="./public/images/list-images/chevron-expand.svg"
+                                            alt=""
+                                        />/ شهرستان
+                                        <img
+                                            src="./public/images/list-images/chevron-expand.svg"
+                                            alt=""
+                                        />
+                                    </th>
+                                    <th>
+                                        کد رهگیری
+                                        <img
+                                            src="./public/images/list-images/chevron-expand.svg"
+                                            alt=""
+                                        />/ تاریخ اخذ کد رهگیری<img
+                                            src="./public/images/list-images/chevron-expand.svg"
+                                            alt=""
+                                        />
+                                    </th>
+                                    <th>
+                                        وضعیت
+                                        <img
+                                            src="./public/images/list-images/chevron-expand.svg"
+                                            alt=""
+                                        />
+                                    </th>
+                                    <th>
+                                        <div class="th-badge rounded-1 d-flex">
+                                            خروجی لیست<img
+                                                src="./public/images/file-earmark-arrow-down.svg"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>
+                                        شخص حقیقی
+                                        <div>
+                                            <button
+                                                class="mt-1 rounded-1 primary-badge"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                حقیقی
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>علی میری</td>
+                                    <td>2051049960</td>
+                                    <td>تهران / تهران</td>
+                                    <td class="text-center">
+                                        12548963000012
+                                        <div>1402/11/25</div>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-2 py-1 rounded-1 basic-badge"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            ثبت نام اولیه
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-3 py-2 gap-3 btn btn-clr btn-clr dropdown-toggle"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            عملیات
+                                            <img
+                                                class="ms-2"
+                                                src="./public/images/three-dots-vertical.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده جزییات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده مدارک</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >انتقال به لیست سیاه</a
+                                                >
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مسدود سازی
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >حذف</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>
+                                        عضو هیئت علمی دانشگاه
+                                        <div>
+                                            <button
+                                                class="mt-1 rounded-1 primary-badge"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                حقیقی
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>علی میری</td>
+                                    <td>2051049960</td>
+                                    <td>تهران / تهران</td>
+                                    <td class="text-center">
+                                        12548963000012
+                                        <div>1402/11/25</div>
+                                    </td>
+
+                                    <td>
+                                        <button
+                                            class="px-2 py-1 btn text-center danger-badge"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            تایید نشده
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-3 py-2 btn btn-clr dropdown-toggle"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            عملیات
+                                            <img
+                                                class="ms-2"
+                                                src="./public/images/three-dots-vertical.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده جزییات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده مدارک</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >انتقال به لیست سیاه</a
+                                                >
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مسدود سازی
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >حذف</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>
+                                        شرکت مشاور
+                                        <div>
+                                            <button
+                                                class="mt-1 rounded-1 purple-badge"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                حقوقی
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>شرکت البرز</td>
+                                    <td>20833021645</td>
+                                    <td>مازندران / ساری</td>
+                                    <td class="text-center">
+                                        12548963000012
+                                        <div>1402/11/25</div>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-2 py-1 btn text-center flex-wrap primary-badge"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            درحال بررسی کارشناس
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-3 py-2 btn btn-clr dropdown-toggle"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            عملیات
+                                            <img
+                                                class="ms-2"
+                                                src="./public/images/three-dots-vertical.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده جزییات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده مدارک</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >انتقال به لیست سیاه</a
+                                                >
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مسدود سازی
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >حذف</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>
+                                        شخص حقیقی
+
+                                        <div>
+                                            <button
+                                                class="mt-1 rounded-1 primary-badge"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                حقیقی
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>علی میری</td>
+                                    <td>2051049960</td>
+                                    <td>البرز / کرج</td>
+                                    <td class="text-center">
+                                        12548963000012
+
+                                        <div>1402/11/25</div>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-2 py-1 rounded-1 basic-badge"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            ثبت نام اولیه
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-3 py-2 btn btn-clr dropdown-toggle"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            عملیات
+                                            <img
+                                                class="ms-2"
+                                                src="./public/images/three-dots-vertical.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده جزییات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده مدارک</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >انتقال به لیست سیاه</a
+                                                >
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مسدود سازی
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >حذف</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr></tr>
+
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>
+                                        شرکت مشاور
+                                        <div>
+                                            <button
+                                                class="mt-1 rounded-1 purple-badge"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                حقوقی
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>شرکت البرز</td>
+                                    <td>20833021645</td>
+                                    <td>تهران / تهران</td>
+                                    <td class="text-center">
+                                        12548963000012
+                                        <div>1402/11/25</div>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-2 py-1 btn text-center success-badge"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            تایید شده
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-3 py-2 btn btn-clr dropdown-toggle"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            عملیات
+                                            <img
+                                                class="ms-2"
+                                                src="./public/images/three-dots-vertical.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده جزییات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده مدارک</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >انتقال به لیست سیاه</a
+                                                >
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مسدود سازی
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >حذف</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>
+                                        عضو هیئت علمی دانشگاه
+                                        <div>
+                                            <button
+                                                class="mt-1 rounded-1 primary-badge"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                حقیقی
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>علی میری</td>
+                                    <td>2051049960</td>
+                                    <td>تهران / تهران</td>
+                                    <td class="text-center">
+                                        12548963000012
+                                        <div>1402/11/25</div>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-2 py-1 btn text-center danger-badge"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            تایید نشده
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-3 py-2 btn btn-clr dropdown-toggle"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            عملیات
+                                            <img
+                                                class="ms-2"
+                                                src="./public/images/three-dots-vertical.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده جزییات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده مدارک</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >انتقال به لیست سیاه</a
+                                                >
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مسدود سازی
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >حذف</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>
+                                        موسسات و مراکز علمی و تحقیقاتی
+                                        <div>
+                                            <button
+                                                class="mt-1 rounded-1 purple-badge"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                حقوقی
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>جهاد دانشگاهی مازندران</td>
+                                    <td>20833021645</td>
+                                    <td>مازندران / ساری</td>
+                                    <td class="text-center">
+                                        12548963000012
+                                        <div>1402/11/25</div>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-2 py-1 btn text-center success-badge"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            تایید شده
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-3 py-2 btn btn-clr dropdown-toggle"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            عملیات
+                                            <img
+                                                class="ms-2"
+                                                src="./public/images/three-dots-vertical.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده جزییات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده مدارک</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >انتقال به لیست سیاه</a
+                                                >
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مسدود سازی
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >حذف</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>
+                                        شخص حقیقی
+                                        <div>
+                                            <button
+                                                class="mt-1 rounded-1 primary-badge"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                حقیقی
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>علی میری</td>
+                                    <td>2051049960</td>
+                                    <td>البرز / کرج</td>
+                                    <td class="text-center">
+                                        12548963000012
+                                        <div>1402/11/25</div>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-2 py-1 btn text-center primary-badge"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            درحال بررسی کارشناس
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-3 py-2 gap-3 btn btn-clr btn-clr dropdown-toggle"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            عملیات
+                                            <img
+                                                class="ms-2"
+                                                src="./public/images/three-dots-vertical.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده جزییات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده مدارک</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >انتقال به لیست سیاه</a
+                                                >
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مسدود سازی
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >حذف</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>
+                                        دفتر فنی بنیاد
+                                        <div>
+                                            <button
+                                                class="mt-1 rounded-1 purple-badge"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                حقوقی
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>دفتر فنی بنیاد مازندران</td>
+                                    <td>20833021645</td>
+                                    <td>مازندران / ساری</td>
+                                    <td class="text-center">
+                                        12548963000012
+                                        <div>1402/11/25</div>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-2 py-1 rounded-1 basic-badge"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            ثبت نام اولیه
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-3 py-2 btn btn-clr dropdown-toggle"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            عملیات
+                                            <img
+                                                class="ms-2"
+                                                src="./public/images/three-dots-vertical.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده جزییات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده مدارک</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >انتقال به لیست سیاه</a
+                                                >
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مسدود سازی
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >حذف</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" /></td>
+                                    <td>
+                                        عضو هیئت علمی دانشگاه
+                                        <div>
+                                            <button
+                                                class="mt-1 rounded-1 primary-badge"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                حقیقی
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>علی میری</td>
+                                    <td>2051049960</td>
+                                    <td>البرز / کرج</td>
+                                    <td class="text-center">
+                                        12548963000012
+                                        <div>1402/11/25</div>
+                                    </td>
+
+                                    <td>
+                                        <button
+                                            class="px-2 py-1 btn text-center danger-badge"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            تایید نشده
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button
+                                            class="px-3 py-2 btn btn-clr dropdown-toggle"
+                                            type="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            عملیات
+                                            <img
+                                                class="ms-2"
+                                                src="./public/images/three-dots-vertical.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده جزییات
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مشاهده مدارک</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >انتقال به لیست سیاه</a
+                                                >
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >مسدود سازی
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                    >حذف</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div
+                            class="table-footer gap-3 align-items-center d-flex justify-content-between"
+                        >
+                            <div class="d-flex gap-2 mt-5 mb-5 footer">
+                                نمایش رکورد
+                                <button
+                                    class="mt-1 rounded-1 purple-badge"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    11
+                                </button>
+                                تا
+                                <button
+                                    class="mt-1 rounded-1 purple-badge"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    20
+                                </button>
+                                از
+
+                                <button
+                                    class="mt-1 rounded-1 purple-badge"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    584610
+                                </button>
+                            </div>
+                            <div class="d-flex gap-3 text-secondary">
+                                <img
+                                    src="./public/images/chevron-double-right.svg"
+                                    alt=""
+                                />
+                                <img
+                                    src="./public/images/list-images/chevron-right.svg"
+                                    alt=""
+                                />
+                                1
+                                <div class="custom-numb">2</div>
+                                3 ... 5 6
+                                <img
+                                    src="./public/images/list-images/chevron-left.svg"
+                                    alt=""
+                                />
+                                <img
+                                    src="./public/images/chevron-double-left.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 side-bar">
+                    <div class="container-sidebar">
+                        <div class="title-sidebar d-flex gap-2">
+                            <span>سامانه جامع عمران روستایی</span>
+                            <img
+                                class="img-title"
+                                src="./public/images/Rectangle 70.png"
+                                alt="icon-title"
+                            />
+                        </div>
+                        <div class="card-one">
+                            <div class="dropdown-center dropdown-center-first">
+                                <button
+                                    class="btn d-flex gap-3"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <div>
+                                        <img
+                                            src="./public/images/272c8fb132a566ddd353bbca4d6b5c190785c064.jpg"
+                                            alt="admin"
+                                        />
+                                        <span>سوپر ادمین</span>
+                                    </div>
+                                    <div class="img-arrow">
+                                        <img
+                                            src="./public/images/arrows.png"
+                                            alt="arrows"
+                                        />
+                                    </div>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-first">
+                                    <li>
+                                        <a
+                                            class="dropdown-item dropdown-item-first"
+                                            href="#"
+                                            >سوپر ادمین</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item dropdown-item-first"
+                                            href="#"
+                                            >ادمین</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item dropdown-item-first"
+                                            href="#"
+                                            >اپراتور</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="line" />
+                        <div class="card">
+                            <img
+                                class="icon-card"
+                                src="./public/images/category.png"
+                                alt="category"
+                            />
+                            <span class="title-card">داشبورد </span>
+                        </div>
+                        <hr class="line" />
+                        <div class="card-two d-flex justify-content-between">
+                            <div class="d-flex gap-3">
+                                <img
+                                    class="icon-card"
+                                    src="./public/images/it-network.png"
+                                    alt="it-network"
+                                />
+                                <span class="title-card">اطلاعات پایه</span>
+                            </div>
+                            <div class="img-arrow">
+                                <img
+                                    src="./public/images/arrows.png"
+                                    alt="arrows"
+                                />
+                            </div>
+                        </div>
+                        <hr class="line" />
+                        <div class="card-three">
+                            <div class="dropdown">
+                                <a
+                                    class="style-link"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <div class="d-flex gap-3">
+                                        <img
+                                            class="icon-card"
+                                            src="./public/images/people.png"
+                                            alt="people"
+                                        />
+                                        <span class="title-card">
+                                            مدیریت کاربران</span
+                                        >
+                                    </div>
+                                    <div class="img-arrow">
+                                        <img
+                                            src="./public/images/arrows.png"
+                                            alt="arrows"
+                                        />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item d-flex" href="#"
+                                            >- کاربران
+                                            <div class="img-arrow">
+                                                <img
+                                                    src="./public/images/arrows.png"
+                                                    alt="arrows"
+                                                />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item d-flex" href="#"
+                                            >- نقش ها
+                                            <div class="img-arrow">
+                                                <img
+                                                    src="./public/images/arrows.png"
+                                                    alt="arrows"
+                                                />
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="line" />
+                        <div class="card-four">
+                            <div class="dropdown">
+                                <a
+                                    class="d-flex style-link"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <div class="d-flex gap-3">
+                                        <img
+                                            src="./public/images/update-file.png"
+                                            alt="update-file"
+                                        />
+                                        <span>مدیریت طرح ها</span>
+                                    </div>
+                                    <div class="img-arrow">
+                                        <img
+                                            src="./public/images/arrows.png"
+                                            alt="arrows"
+                                        />
+                                    </div>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            - طرح هادی و تعیین محدوده
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            - طرح صدور سند
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="line" />
+                        <div class="card-five">
+                            <div class="dropdown">
+                                <a
+                                    class="style-link d-flex"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <div class="d-flex gap-2">
+                                        <img
+                                            src="./public/images/finance.png"
+                                            alt="finance"
+                                        />
+                                        <span> مدیریت اعتبارات </span>
+                                    </div>
+                                    <div class="img-arrow">
+                                        <img
+                                            src="./public/images/arrows.png"
+                                            alt="arrows"
+                                        />
+                                    </div>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="dropdown">
+                                            <a
+                                                class="dropdown-toggle style-link"
+                                                href="#"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                - مدیریت اعتبار طرح ها
+                                            </a>
+
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        مدیریت اعتبار طرح ها</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        - درج اعتبار طرح جدید</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        - لیست اعتبارات طرح</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            - مدیریت اعتبارات انواع پروژه</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="line" />
+                        <div class="card-six">
+                            <div class="dropdown">
+                                <a
+                                    class="d-flex justify-content-between style-link"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <div class="w-100">
+                                        <img
+                                            src="./public/images/geolocation.png"
+                                            alt="geolocation"
+                                        />
+                                        <span>تقسیمات سیاسی </span>
+                                    </div>
+                                    <div class="img-arrow">
+                                        <img
+                                            src="./public/images/arrows.png"
+                                            alt="arrows"
+                                        />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a
+                                            class="dropdown-item d-flex"
+                                            href="#"
+                                        >
+                                            - مدیریت استان ها
+                                            <div class="img-arrow">
+                                                <img
+                                                    src="./public/images/arrows.png"
+                                                    alt="arrows"
+                                                />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item d-flex"
+                                            href="#"
+                                        >
+                                            - مدیریت شهرستان ها
+                                            <div class="img-arrow">
+                                                <img
+                                                    src="./public/images/arrows.png"
+                                                    alt="arrows"
+                                                />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item d-flex"
+                                            href="#"
+                                        >
+                                            - مدیریت بخش ها
+                                            <div class="img-arrow">
+                                                <img
+                                                    src="./public/images/arrows.png"
+                                                    alt="arrows"
+                                                />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item d-flex"
+                                            href="#"
+                                        >
+                                            - مدیریت دهستان ها
+                                            <div class="img-arrow">
+                                                <img
+                                                    src="./public/images/arrows.png"
+                                                    alt="arrows"
+                                                />
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item d-flex"
+                                            href="#"
+                                        >
+                                            - مدیریت روستا ها
+                                            <div class="img-arrow">
+                                                <img
+                                                    src="./public/images/arrows.png"
+                                                    alt="arrows"
+                                                />
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="line" />
+                        <div class="card-seven">
+                            <div class="dropdown">
+                                <a
+                                    class="d-flex style-link"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <div class="d-flex gap-2">
+                                        <img
+                                            src="./public/images/update-folder.png"
+                                            alt="update-folder"
+                                        />
+                                        <span> مدیریت پروژه ها </span>
+                                    </div>
+                                    <div class="img-arrow">
+                                        <img
+                                            src="./public/images/arrows.png"
+                                            alt="arrows"
+                                        />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a
+                                            class="dropdown-item d-flex"
+                                            href="#"
+                                        >
+                                            - درج پروژه جدید
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown">
+                                            <a
+                                                class="dropdown-item d-flex"
+                                                href="#"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                - لیست پروژه ها
+                                                <div class="img-arrow">
+                                                    <img
+                                                        src="./public/images/arrows.png"
+                                                        alt="arrows"
+                                                    />
+                                                </div>
+                                            </a>
+
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >- همه
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        - جهت بررسی کارشناس
+                                                        استان</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item d-flex"
+                                                        href="#"
+                                                    >
+                                                        <span
+                                                            >- جهت بررسی معاون
+                                                            عمران روستایی</span
+                                                        >
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item d-flex"
+                                                        href="#"
+                                                    >
+                                                        <span>
+                                                            - عدم تایید معاون
+                                                            عمران روستایی
+                                                        </span>
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >- جهت بررسی مدیرکل
+                                                        استان</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item d-flex"
+                                                        href="#"
+                                                    >
+                                                        <span>
+                                                            - عدم تایید مدیرکل
+                                                            استان</span
+                                                        >
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >- جهت بررسی کارشناس
+                                                        دفتر مرکزی
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >- عدم تایید کارشناس
+                                                        دفتر مرکزی</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item d-flex"
+                                                        href="#"
+                                                    >
+                                                        <span>
+                                                            - تایید شده
+                                                        </span>
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item d-flex"
+                                                        href="#"
+                                                    >
+                                                        <span>
+                                                            - تایید نشده
+                                                        </span>
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown">
+                                            <a
+                                                class="dropdown-item d-flex"
+                                                href="#"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                - طرح هادی و تعیین محدوده
+                                            </a>
+
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item d-flex"
+                                                        href="#"
+                                                    >
+                                                        <span>
+                                                            - جهت بررسی کارشناس
+                                                            استان</span
+                                                        >
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item d-flex"
+                                                        href="#"
+                                                    >
+                                                        <span>
+                                                            - جهت بررسی معاون
+                                                            استان</span
+                                                        >
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown">
+                                            <a
+                                                class="dropdown-item d-flex"
+                                                href="#"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                - تفکیک
+                                                <div class="img-arrow">
+                                                    <img
+                                                        src="./public/images/arrows.png"
+                                                        alt="arrows"
+                                                    />
+                                                </div>
+                                            </a>
+
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        - جهت بررسی کارشناس
+                                                        استان
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >- جهت بررسی کارشناس
+                                                        استان
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    ></a>
+                                                    - جهت بررسی کارشناس دفتر
+                                                    مرکزی
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="line" />
+                        <div class="card-eghit">
+                            <div class="dropdown">
+                                <a
+                                    class="style-link"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <img
+                                        src="./public/images/profile-2user.png"
+                                        alt=""
+                                    />
+                                    مدیریت مشاورین
+                                    <div class="img-arrow">
+                                        <img
+                                            src="./public/images/arrows.png"
+                                            alt="arrows"
+                                        />
+                                    </div>
+                                </a>
+                            </div>
+
+                            <ul class="card-list dropdown-menu">
+                                <li>
+                                    <a class="list-style dropdown-item" href="#"
+                                        >-</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        class="list-style dropdown-item d-flex"
+                                        href="#"
+                                        href="#"
+                                    >
+                                        - جهت تکمیل پروفایل
+                                        <img
+                                            src="./public/images/Number Badges.png"
+                                            alt=""
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="list-style dropdown-item d-flex"
+                                        href="#"
+                                        href="#"
+                                    >
+                                        درحال بررسی
+                                        <img
+                                            src="./public/images/Number Badges.png"
+                                            alt=""
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="list-style dropdown-item d-flex"
+                                        href="#"
+                                        href="#"
+                                    >
+                                        - تایید شده
+                                        <img
+                                            src="./public/images/Number Badges.png"
+                                            alt=""
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="list-style dropdown-item d-flex"
+                                        href="#"
+                                        href="#"
+                                    >
+                                        - تایید نشده
+                                        <img
+                                            src="./public/images/Number Badges.png"
+                                            alt=""
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="list-style dropdown-item d-flex"
+                                        href="#"
+                                        href="#"
+                                    >
+                                        - لیست سیاه
+                                        <img
+                                            src="./public/images/Number Badges.png"
+                                            alt=""
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="line" />
+                        <div class="card-nine">
+                            <div class="dropdown">
+                                <a
+                                    class="d-flex style-link"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <div class="d-flex gap-2">
+                                        <img
+                                            src="./public/images/bank.png"
+                                            alt="bank"
+                                        />
+                                        <span> مدیریت متقاضیان و ا...</span>
+                                    </div>
+                                    <div class="img-arrow">
+                                        <img
+                                            src="./public/images/arrows.png"
+                                            alt="arrows"
+                                        />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a
+                                            class="dropdown-item d-flex"
+                                            href="#"
+                                        >
+                                            - درج متقاضی جدید
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown">
+                                            <a
+                                                class="dropdown-item d-flex"
+                                                href="#"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                - لیست متقاضیان
+                                                <div class="img-arrow">
+                                                    <img
+                                                        src="./public/images/arrows.png"
+                                                        alt="arrows"
+                                                    />
+                                                </div>
+                                            </a>
+
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >- جهت بررسی
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt="Number Badges"
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        - تایید شده
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt="Number Badges"
+                                                        />
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li></li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item d-flex"
+                                            href="#"
+                                        >
+                                            - درج ملک جدید
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown">
+                                            <a
+                                                class="dropdown-item"
+                                                href="#"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                - لیست املاک
+                                            </a>
+
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        - جهت بررسی
+
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt=""
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >- تایید شده
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    ></a>
+                                                    - تایید نشده
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    ></a>
+                                                    - بایگانی شده
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="line" />
+                        <div class="card-ten">
+                            <div class="dropdown">
+                                <a
+                                    class="d-flex style-link"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <div class="d-flex gap-2">
+                                        <img
+                                            src="./public/images/tab-tablet.png"
+                                            alt="tab-tablet"
+                                        />
+                                        <span> مدیریت درخواست </span>
+                                    </div>
+                                    <div class="img-arrow">
+                                        <img
+                                            src="./public/images/arrows.png"
+                                            alt="arrows"
+                                        />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="dropdown">
+                                            <a
+                                                class="dropdown-item d-flex"
+                                                href="#"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                - صدور سند
+                                                <div class="img-arrow">
+                                                    <img
+                                                        src="./public/images/arrows.png"
+                                                        alt="arrows"
+                                                    />
+                                                </div>
+                                            </a>
+
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >- جهت بررسی کارشناس
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt="Number Badges"
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        - جهت نقشه برداری
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt="Number Badges"
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        - جهت بررسی مدیر شهرستان
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="dropdown">
+                                            <a
+                                                class="dropdown-item d-flex"
+                                                href="#"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                - خدمات فنی صدور پروانه
+                                                <div class="img-arrow">
+                                                    <img
+                                                        src="./public/images/arrows.png"
+                                                        alt="arrows"
+                                                    />
+                                                </div>
+                                            </a>
+
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        - جهت بررسی کارشناس
+                                                        شهرستان
+
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt="Number Badges"
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >- جهت بررسی مدیر
+                                                        شهرستان
+
+                                                        <img
+                                                            src="./public/images/Number Badges.png"
+                                                            alt="Number Badges"
+                                                        />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    ></a>
+                                                    - تایید شده
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    ></a>
+                                                    - تایید نشده
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="line" />
+                        <div class="card-eleven">
+                            <div class="dropdown">
+                                <a
+                                    class="d-flex style-link"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <div class="d-flex gap-2">
+                                        <img
+                                            src="./public/images/document.png"
+                                            alt="bank"
+                                        />
+                                        <span> مدیریت گزارشات</span>
+                                    </div>
+                                    <div class="img-arrow">
+                                        <img
+                                            src="./public/images/arrows.png"
+                                            alt="arrows"
+                                        />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="dropdown">
+                                            <a
+                                                class="dropdown-item d-flex"
+                                                href="#"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                - طرح هادی و تعیین محدوده
+                                                <div class="img-arrow">
+                                                    <img
+                                                        src="./public/images/arrows.png"
+                                                        alt="arrows"
+                                                    />
+                                                </div>
+                                            </a>
+
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >- گزارش شماره 1
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        - گزارش شماره 2
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="dropdown">
+                                            <a
+                                                class="dropdown-item d-flex"
+                                                href="#"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                - گزارش صدور سند
+                                                <div class="img-arrow">
+                                                    <img
+                                                        src="./public/images/arrows.png"
+                                                        alt="arrows"
+                                                    />
+                                                </div>
+                                            </a>
+
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                    >
+                                                        - گزارش شماره 1
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >- گزارش شماره 2
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/plugin/bootstrap-v-5.3/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/plugin/jquery/jquery.min.js"></script>
+        <script src="./assets/js/app.js"></script>
+    </body>
+</html>
