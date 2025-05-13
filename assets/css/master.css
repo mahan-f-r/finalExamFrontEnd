@@ -79,7 +79,7 @@ body {
     background-image: url("../../public/images/Pattern.png"); /* update path as needed */
     background-position: right;
     background-size: 75%;
-    background-color: rgb(244, 245, 247);
+    /* background-color: rgb(244, 245, 247); */
     background-repeat: no-repeat;
 }
 
